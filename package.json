@@ -1,0 +1,31 @@
+{
+  "name": "performance-results-parser",
+  "version": "0.0.1",
+  "description": "Parse performance test results from JMeter and many more",
+  "main": "src/index.js",
+  "files": [
+    "/src"
+  ],
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/test-results-reporter/performance-results-parser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/test-results-reporter/performance-results-parser/issues"
+  },
+  "homepage": "https://github.com/test-results-reporter/performance-results-parser#readme",
+  "dependencies": {
+    "csvjson": "^5.1.0",
+    "globrex": "^0.1.2",
+    "totalist": "^3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
