@@ -13,7 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/test-results-reporter/performance-results-parser.git"
   },
-  "keywords": [],
+  "keywords": [
+    "jmeter",
+    "performance",
+    "test",
+    "results",
+    "parse",
+    "parser"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
