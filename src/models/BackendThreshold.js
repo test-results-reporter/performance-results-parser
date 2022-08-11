@@ -1,8 +1,7 @@
-class Transaction {
+class BackendThreshold {
 
   constructor() {
     this.name = '';
-    this.samples = 0;
     this.average = 0;
     this.median = 0;
     this.min = 0;
@@ -11,14 +10,12 @@ class Transaction {
     this.ninety_five = 0;
     this.ninety_nine = 0;
     this.error_rate = 0;
-    this.duration = 0;
     this.throughput = 0;
     this.received_rate = 0;
     this.sent_rate = 0;
     this.latency = 0;
-    this.threshold = null;
   }
 
 }
 
-module.exports = Transaction;
+module.exports = BackendThreshold;

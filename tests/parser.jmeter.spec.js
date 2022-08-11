@@ -21,6 +21,7 @@ describe('jmeter', () => {
       received_rate: 5166.44,
       sent_rate: 38.87,
       latency: 0,
+      threshold: null,
       transactions: [
         {
           name: 'S01_T01_Application_Launch',
@@ -37,7 +38,8 @@ describe('jmeter', () => {
           throughput: 0.14422,
           received_rate: 2662.79,
           sent_rate: 5.36,
-          latency: 0
+          latency: 0,
+          threshold: null,
         },
         {
           name: 'S01_T02_Application_Login',
@@ -54,7 +56,8 @@ describe('jmeter', () => {
           throughput: 0.1461,
           received_rate: 2754.9,
           sent_rate: 12.94,
-          latency: 0
+          latency: 0,
+          threshold: null,
         },
         {
           name: 'S01_T03_Shipments_Page',
@@ -71,7 +74,8 @@ describe('jmeter', () => {
           throughput: 0.16023,
           received_rate: 156.18,
           sent_rate: 15.12,
-          latency: 0
+          latency: 0,
+          threshold: null,
         },
         {
           name: 'S01_T04_OpenShipment',
@@ -88,7 +92,8 @@ describe('jmeter', () => {
           throughput: 0.17111,
           received_rate: 7.63,
           sent_rate: 8.26,
-          latency: 0
+          latency: 0,
+          threshold: null,
         },
         {
           name: 'SO1_T05_Logout',
@@ -105,7 +110,8 @@ describe('jmeter', () => {
           throughput: 0.26661,
           received_rate: 18.72,
           sent_rate: 22.94,
-          latency: 0
+          latency: 0,
+          threshold: null,
         }
       ]
     };

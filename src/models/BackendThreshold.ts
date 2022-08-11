@@ -1,8 +1,5 @@
-import * as Transaction from './Transaction';
-
-declare class PerformanceResult {
+declare class BackendThreshold {
   name: string;
-  samples: number;
   average: number;
   median: number;
   min: number;
@@ -11,14 +8,12 @@ declare class PerformanceResult {
   ninety_five: number;
   ninety_nine: number;
   error_rate: number;
-  duration: number;
   throughput: number;
   received_rate: number;
   sent_rate: number;
   latency: number;
-  transactions: Transaction[];
 }
 
-declare namespace PerformanceResult {}
+declare namespace BackendThreshold {}
 
-export = PerformanceResult;
+export = BackendThreshold;

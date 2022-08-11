@@ -1,4 +1,4 @@
-class PerformanceResult {
+class BackendPerformanceTestResult {
 
   constructor() {
     this.name = '';
@@ -17,8 +17,9 @@ class PerformanceResult {
     this.sent_rate = 0;
     this.latency = 0;
     this.transactions = [];
+    this.threshold = null;
   }
 
 }
 
-module.exports = PerformanceResult;
+module.exports = BackendPerformanceTestResult;

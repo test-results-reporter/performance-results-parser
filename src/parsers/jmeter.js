@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const csv_json = require('csvjson');
-const PerformanceResult = require('../models/PerformanceResult');
+const BackendPerformanceTestResult = require('../models/BackendPerformanceTestResult');
 const Transaction = require('../models/Transaction');
 
 function getTransaction(transaction, result) {
@@ -24,7 +24,7 @@ function getTransaction(transaction, result) {
 function getResultFromCSV(file) {
   const cwd = process.cwd();
   const results = csv_json.toObject(fs.readFileSync(path.join(cwd, file), { encoding: 'utf8' }));
-    const perf_result = getTransaction(new PerformanceResult(), results[results.length - 1]);
+    const perf_result = getTransaction(new BackendPerformanceTestResult(), results[results.length - 1]);
     for (let i = 0; i < results.length - 1; i++) {
       perf_result.transactions.push(getTransaction(new Transaction(), results[i]));
     }
