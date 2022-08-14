@@ -1,6 +1,8 @@
 const path = require('path');
 const { totalist } = require('totalist/sync');
 const globrex = require('globrex');
+const Threshold = require('../models/Threshold');
+const Metric = require('../models/Metric');
 
 /**
  * @param {string} file_path 
@@ -21,6 +23,40 @@ function getMatchingFilePaths(file_path) {
   return [file_path];
 }
 
+/**
+ * @param {Metric} metric 
+ * @param {Threshold[]} thresholds 
+ */
+function setMetricStatus(metric, thresholds) {
+  if (thresholds) {
+    const threshold = thresholds.find(_item => _item.metric === metric.name);
+    if (threshold) {
+      for(let i = 0; i < threshold.checks.length; i++) {
+        const check = threshold.checks[i];
+        const [field, value] = check.split(/<|>/);
+        const difference = metric[field] - parseFloat(value);
+        if (check.includes('<')) {
+          if (difference > 0) {
+            metric.failures.push({
+              field,
+              message: `+${difference}`
+            });
+          } 
+        } else if (check.includes('>')) {
+          if (difference < 0) {
+            metric.failures.push({
+              field,
+              message: `${difference}`
+            });
+          }
+        }
+      }
+    }
+  }
+  metric.status = metric.failures.length > 0 ? 'FAIL' : 'PASS';
+}
+
 module.exports = {
-  getMatchingFilePaths
+  getMatchingFilePaths,
+  setMetricStatus
 }

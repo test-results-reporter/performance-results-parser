@@ -1,6 +1,6 @@
 {
   "name": "performance-results-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parse performance test results from JMeter and many more",
   "main": "src/index.js",
   "files": [
