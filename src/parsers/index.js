@@ -24,7 +24,7 @@ function parse(options) {
     const matched_files = getMatchingFilePaths(options.files[i]);
     for (let j = 0; j < matched_files.length; j++) {
       const file = matched_files[j];
-      results.push(parser.parse(file));
+      results.push(parser.parse(file, options.thresholds));
     }
   }
   return merge(results);
