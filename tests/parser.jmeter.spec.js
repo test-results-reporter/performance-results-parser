@@ -17,7 +17,7 @@ describe('jmeter', () => {
           "type": "COUNTER",
           "sum": 39,
           "rate": 0.55535,
-          "unit": "",
+          "unit": "/s",
           "avg": 0,
           "med": 0,
           "max": 0,
@@ -104,7 +104,7 @@ describe('jmeter', () => {
               "type": "COUNTER",
               "sum": 10,
               "rate": 0.14422,
-              "unit": "",
+              "unit": "/s",
               "avg": 0,
               "med": 0,
               "max": 0,
@@ -191,7 +191,7 @@ describe('jmeter', () => {
               "type": "COUNTER",
               "sum": 9,
               "rate": 0.1461,
-              "unit": "",
+              "unit": "/s",
               "avg": 0,
               "med": 0,
               "max": 0,
@@ -294,7 +294,7 @@ describe('jmeter', () => {
           "type": "COUNTER",
           "sum": 39,
           "rate": 0.55535,
-          "unit": "",
+          "unit": "/s",
           "avg": 0,
           "med": 0,
           "max": 0,
@@ -381,7 +381,7 @@ describe('jmeter', () => {
               "type": "COUNTER",
               "sum": 10,
               "rate": 0.14422,
-              "unit": "",
+              "unit": "/s",
               "avg": 0,
               "med": 0,
               "max": 0,
@@ -468,7 +468,7 @@ describe('jmeter', () => {
               "type": "COUNTER",
               "sum": 9,
               "rate": 0.1461,
-              "unit": "",
+              "unit": "/s",
               "avg": 0,
               "med": 0,
               "max": 0,
@@ -558,7 +558,7 @@ describe('jmeter', () => {
       thresholds: [
         {
           metric: 'Request Duration',
-          checks: ['avg<500', 'p95<20000', 'min<50']
+          checks: ['avg<500', 'p95<20000', 'min>5000']
         }
       ]
     });
@@ -571,7 +571,7 @@ describe('jmeter', () => {
           "type": "COUNTER",
           "sum": 39,
           "rate": 0.55535,
-          "unit": "",
+          "unit": "/s",
           "avg": 0,
           "med": 0,
           "max": 0,
@@ -598,11 +598,11 @@ describe('jmeter', () => {
           "failures": [
             {
               "field": "avg",
-              "message": "+4160"
+              "difference": 4160
             },
             {
               "field": "min",
-              "message": "+1085"
+              "difference": -3865
             }
           ],
           "status": "FAIL"
@@ -666,7 +666,7 @@ describe('jmeter', () => {
               "type": "COUNTER",
               "sum": 10,
               "rate": 0.14422,
-              "unit": "",
+              "unit": "/s",
               "avg": 0,
               "med": 0,
               "max": 0,
@@ -693,11 +693,11 @@ describe('jmeter', () => {
               "failures": [
                 {
                   "field": "avg",
-                  "message": "+2586"
+                  "difference": 2586
                 },
                 {
                   "field": "min",
-                  "message": "+2069"
+                  "difference": -2881
                 }
               ],
               "status": "FAIL"
@@ -761,7 +761,7 @@ describe('jmeter', () => {
               "type": "COUNTER",
               "sum": 9,
               "rate": 0.1461,
-              "unit": "",
+              "unit": "/s",
               "avg": 0,
               "med": 0,
               "max": 0,
@@ -788,11 +788,11 @@ describe('jmeter', () => {
               "failures": [
                 {
                   "field": "avg",
-                  "message": "+3855"
+                  "difference": 3855
                 },
                 {
                   "field": "min",
-                  "message": "+2992"
+                  "difference": -1958
                 }
               ],
               "status": "FAIL"

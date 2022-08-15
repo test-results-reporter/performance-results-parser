@@ -52,6 +52,7 @@ function getSampleMetric(record, thresholds) {
   metric.type = 'COUNTER';
   metric.sum = parseInt(record['# Samples']);
   metric.rate = parseFloat(record['Throughput']);
+  metric.unit = '/s';
   setMetricStatus(metric, thresholds);
   return metric;
 }

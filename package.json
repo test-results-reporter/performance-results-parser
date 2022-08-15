@@ -1,13 +1,13 @@
 {
   "name": "performance-results-parser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Parse performance test results from JMeter and many more",
   "main": "src/index.js",
   "files": [
     "/src"
   ],
   "scripts": {
-    "test": "mocha tests"
+    "test": "c8 mocha tests"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "totalist": "^3.0.0"
   },
   "devDependencies": {
+    "c8": "^7.12.0",
     "mocha": "^10.0.0"
   }
 }
