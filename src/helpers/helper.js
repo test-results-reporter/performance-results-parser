@@ -39,14 +39,14 @@ function setMetricStatus(metric, thresholds) {
           if (difference > 0) {
             metric.failures.push({
               field,
-              message: `+${difference}`
+              difference
             });
           } 
         } else if (check.includes('>')) {
           if (difference < 0) {
             metric.failures.push({
               field,
-              message: `${difference}`
+              difference
             });
           }
         }
