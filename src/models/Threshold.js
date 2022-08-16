@@ -1,11 +1,3 @@
-class Threshold {
-
-  constructor() {
-    this.metric = '';
-    this.scope = '';
-    this.checks = [];
-  }
-
-}
+class Threshold {}
 
 module.exports = Threshold;
