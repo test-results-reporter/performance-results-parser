@@ -3,7 +3,7 @@ export type Status = 'PASS' | 'FAIL';
 
 declare class MetricFailure {
   field: string;
-  difference: string;
+  difference: number;
 }
 
 declare class Metric {

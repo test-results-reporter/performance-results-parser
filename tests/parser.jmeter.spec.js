@@ -29,7 +29,7 @@ describe('jmeter', () => {
           "status": "PASS"
         },
         {
-          "name": "Request Duration",
+          "name": "Duration",
           "type": "TREND",
           "sum": 0,
           "rate": 0,
@@ -45,7 +45,7 @@ describe('jmeter', () => {
           "status": "PASS"
         },
         {
-          "name": "Error",
+          "name": "Errors",
           "type": "RATE",
           "sum": 0,
           "rate": 0,
@@ -116,7 +116,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Request Duration",
+              "name": "Duration",
               "type": "TREND",
               "sum": 0,
               "rate": 0,
@@ -132,7 +132,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Error",
+              "name": "Errors",
               "type": "RATE",
               "sum": 0,
               "rate": 0.001,
@@ -203,7 +203,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Request Duration",
+              "name": "Duration",
               "type": "TREND",
               "sum": 0,
               "rate": 0,
@@ -219,7 +219,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Error",
+              "name": "Errors",
               "type": "RATE",
               "sum": 0,
               "rate": 0,
@@ -280,7 +280,7 @@ describe('jmeter', () => {
       files: ['tests/data/jmeter/sample.csv'],
       thresholds: [
         {
-          metric: 'Request Duration',
+          metric: 'Duration',
           checks: ['avg<5000']
         }
       ]
@@ -306,7 +306,7 @@ describe('jmeter', () => {
           "status": "PASS"
         },
         {
-          "name": "Request Duration",
+          "name": "Duration",
           "type": "TREND",
           "sum": 0,
           "rate": 0,
@@ -322,7 +322,7 @@ describe('jmeter', () => {
           "status": "PASS"
         },
         {
-          "name": "Error",
+          "name": "Errors",
           "type": "RATE",
           "sum": 0,
           "rate": 0,
@@ -393,7 +393,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Request Duration",
+              "name": "Duration",
               "type": "TREND",
               "sum": 0,
               "rate": 0,
@@ -409,7 +409,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Error",
+              "name": "Errors",
               "type": "RATE",
               "sum": 0,
               "rate": 0.001,
@@ -480,7 +480,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Request Duration",
+              "name": "Duration",
               "type": "TREND",
               "sum": 0,
               "rate": 0,
@@ -496,7 +496,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Error",
+              "name": "Errors",
               "type": "RATE",
               "sum": 0,
               "rate": 0,
@@ -557,7 +557,7 @@ describe('jmeter', () => {
       files: ['tests/data/jmeter/sample.csv'],
       thresholds: [
         {
-          metric: 'Request Duration',
+          metric: 'Duration',
           checks: ['avg<500', 'p95<20000', 'min>5000']
         }
       ]
@@ -583,7 +583,7 @@ describe('jmeter', () => {
           "status": "PASS"
         },
         {
-          "name": "Request Duration",
+          "name": "Duration",
           "type": "TREND",
           "sum": 0,
           "rate": 0,
@@ -608,7 +608,7 @@ describe('jmeter', () => {
           "status": "FAIL"
         },
         {
-          "name": "Error",
+          "name": "Errors",
           "type": "RATE",
           "sum": 0,
           "rate": 0,
@@ -678,7 +678,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Request Duration",
+              "name": "Duration",
               "type": "TREND",
               "sum": 0,
               "rate": 0,
@@ -703,7 +703,7 @@ describe('jmeter', () => {
               "status": "FAIL"
             },
             {
-              "name": "Error",
+              "name": "Errors",
               "type": "RATE",
               "sum": 0,
               "rate": 0.001,
@@ -773,7 +773,7 @@ describe('jmeter', () => {
               "status": "PASS"
             },
             {
-              "name": "Request Duration",
+              "name": "Duration",
               "type": "TREND",
               "sum": 0,
               "rate": 0,
@@ -798,7 +798,7 @@ describe('jmeter', () => {
               "status": "FAIL"
             },
             {
-              "name": "Error",
+              "name": "Errors",
               "type": "RATE",
               "sum": 0,
               "rate": 0,

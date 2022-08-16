@@ -64,7 +64,7 @@ function getSampleMetric(record, thresholds) {
  */
 function getRequestDurationMetric(record, thresholds) {
   const metric = new Metric();
-  metric.name = 'Request Duration';
+  metric.name = 'Duration';
   metric.type = 'TREND';
   metric.avg = parseInt(record['Average']);
   metric.med = parseInt(record['Median']);
@@ -84,7 +84,7 @@ function getRequestDurationMetric(record, thresholds) {
  */
 function getErrorMetric(record, thresholds) {
   const metric = new Metric();
-  metric.name = 'Error';
+  metric.name = 'Errors';
   metric.type = 'RATE';
   metric.rate = parseFloat(record['Error %'].replace('%', ''));
   metric.unit = '%';
