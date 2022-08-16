@@ -3,6 +3,7 @@ const { totalist } = require('totalist/sync');
 const globrex = require('globrex');
 const Threshold = require('../models/Threshold');
 const Metric = require('../models/Metric');
+const Transaction = require('../models/Transaction');
 
 /**
  * @param {string} file_path 
@@ -24,12 +25,24 @@ function getMatchingFilePaths(file_path) {
 }
 
 /**
+ * @param {Transaction} transaction 
  * @param {Metric} metric 
  * @param {Threshold[]} thresholds 
  */
-function setMetricStatus(metric, thresholds) {
+function setMetricStatus(transaction, metric, thresholds) {
   if (thresholds) {
-    const threshold = thresholds.find(_item => _item.metric === metric.name);
+    const threshold = thresholds.find(_threshold => {
+      const metric_matched = _threshold.metric === metric.name;
+      if (metric_matched) {
+        if (_threshold.scope === 'TRANSACTION') {
+          return _threshold.transactions.includes(transaction.name);
+        } else if (_threshold.scope === 'OVERALL') {
+          return transaction.name === 'TOTAL';
+        }
+        return true;
+      }
+      return false;
+    });
     if (threshold) {
       for(let i = 0; i < threshold.checks.length; i++) {
         const check = threshold.checks[i];
