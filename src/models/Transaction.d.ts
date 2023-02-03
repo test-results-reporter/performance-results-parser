@@ -1,3 +1,5 @@
+import * as Metric from './Metric';
+
 export type Status = 'PASS' | 'FAIL';
 
 declare class Transaction {
