@@ -1,6 +1,6 @@
 {
   "name": "performance-results-parser",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Parse performance test results from JMeter and many more",
   "main": "src/index.js",
   "files": [
@@ -30,6 +30,7 @@
   "dependencies": {
     "csvjson": "^5.1.0",
     "globrex": "^0.1.2",
+    "parse-jtl": "^1.0.2",
     "totalist": "^3.0.0"
   },
   "devDependencies": {

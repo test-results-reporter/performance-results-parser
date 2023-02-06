@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const csv_json = require('csvjson');
+const { aggregate } = require('parse-jtl');
 const PerformanceTestResult = require('../models/PerformanceTestResult');
 const Transaction = require('../models/Transaction');
 const Metric = require('../models/Metric');
@@ -11,20 +12,22 @@ function parse(file, thresholds) {
   const extension = path.extname(file);
   if (extension === '.csv') {
     return getResultFromCSV(file, thresholds);
+  } else {
+    return getResultFromJTLFile(file, thresholds);
   }
 }
 
 function getResultFromCSV(file, thresholds) {
   const cwd = process.cwd();
   const results = csv_json.toObject(fs.readFileSync(path.join(cwd, file), { encoding: 'utf8' }));
-    const perf_result = getTransaction(new PerformanceTestResult(), results[results.length - 1], thresholds);
-    for (let i = 0; i < results.length - 1; i++) {
-      perf_result.transactions.push(getTransaction(new Transaction(), results[i], thresholds));
-    }
-    if (perf_result.status === 'PASS' && perf_result.transactions.some(_trans => _trans.status === 'FAIL')) {
-      perf_result.status = 'FAIL';
-    }
-    return perf_result;
+  const perf_result = getTransaction(new PerformanceTestResult(), results[results.length - 1], thresholds);
+  for (let i = 0; i < results.length - 1; i++) {
+    perf_result.transactions.push(getTransaction(new Transaction(), results[i], thresholds));
+  }
+  if (perf_result.status === 'PASS' && perf_result.transactions.some(_trans => _trans.status === 'FAIL')) {
+    perf_result.status = 'FAIL';
+  }
+  return perf_result;
 }
 
 /**
@@ -33,7 +36,7 @@ function getResultFromCSV(file, thresholds) {
  * @param {Threshold[]} thresholds
  * @returns 
  */
- function getTransaction(transaction, record, thresholds) {
+function getTransaction(transaction, record, thresholds) {
   transaction.name = record['Label'];
   transaction.metrics.push(getSampleMetric(transaction, record, thresholds));
   transaction.metrics.push(getRequestDurationMetric(transaction, record, thresholds));
@@ -123,6 +126,18 @@ function getDataReceivedMetric(transaction, record, thresholds) {
   metric.unit = 'KB/sec';
   setMetricStatus(transaction, metric, thresholds);
   return metric;
+}
+
+function getResultFromJTLFile(file, thresholds) {
+  const results = aggregate(file);
+  const perf_result = getTransaction(new PerformanceTestResult(), results[results.length - 1], thresholds);
+  for (let i = 0; i < results.length - 1; i++) {
+    perf_result.transactions.push(getTransaction(new Transaction(), results[i], thresholds));
+  }
+  if (perf_result.status === 'PASS' && perf_result.transactions.some(_trans => _trans.status === 'FAIL')) {
+    perf_result.status = 'FAIL';
+  }
+  return perf_result;
 }
 
 module.exports = {
