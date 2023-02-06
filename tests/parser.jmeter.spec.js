@@ -1413,4 +1413,272 @@ describe('jmeter', () => {
     assert.deepEqual(actual, expected);
   });
 
+  it('jtl', () => {
+    const actual = parser.parse({
+      type: 'jmeter',
+      files: ['tests/data/jmeter/simple.jtl']
+    });
+    const expected = {
+      "name": "TOTAL",
+      "status": "PASS",
+      "metrics": [
+        {
+          "name": "Samples",
+          "type": "COUNTER",
+          "sum": 8,
+          "rate": 7.067137809187279,
+          "unit": "/s",
+          "avg": 0,
+          "med": 0,
+          "max": 0,
+          "min": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "failures": [],
+          "status": "PASS"
+        },
+        {
+          "name": "Duration",
+          "type": "TREND",
+          "sum": 0,
+          "rate": 0,
+          "unit": "",
+          "avg": 1153,
+          "med": 980,
+          "max": 2200,
+          "min": 24,
+          "p90": 2200,
+          "p95": 2200,
+          "p99": 2200,
+          "failures": [],
+          "status": "PASS"
+        },
+        {
+          "name": "Errors",
+          "type": "RATE",
+          "sum": 0,
+          "rate": 0.13,
+          "unit": "%",
+          "avg": 0,
+          "med": 0,
+          "max": 0,
+          "min": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "failures": [],
+          "status": "PASS"
+        },
+        {
+          "name": "Data Sent",
+          "type": "COUNTER",
+          "sum": 0,
+          "rate": 355,
+          "unit": "KB/sec",
+          "avg": 0,
+          "med": 0,
+          "max": 0,
+          "min": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "failures": [],
+          "status": "PASS"
+        },
+        {
+          "name": "Data Received",
+          "type": "COUNTER",
+          "sum": 0,
+          "rate": 355,
+          "unit": "KB/sec",
+          "avg": 0,
+          "med": 0,
+          "max": 0,
+          "min": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "failures": [],
+          "status": "PASS"
+        }
+      ],
+      "transactions": [
+        {
+          "name": "call1",
+          "status": "PASS",
+          "metrics": [
+            {
+              "name": "Samples",
+              "type": "COUNTER",
+              "sum": 4,
+              "rate": 3.5335689045936394,
+              "unit": "/s",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Duration",
+              "type": "TREND",
+              "sum": 0,
+              "rate": 0,
+              "unit": "",
+              "avg": 837,
+              "med": 523,
+              "max": 1170,
+              "min": 24,
+              "p90": 1170,
+              "p95": 1170,
+              "p99": 1170,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Errors",
+              "type": "RATE",
+              "sum": 0,
+              "rate": 0.25,
+              "unit": "%",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Data Sent",
+              "type": "COUNTER",
+              "sum": 0,
+              "rate": 175,
+              "unit": "KB/sec",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Data Received",
+              "type": "COUNTER",
+              "sum": 0,
+              "rate": 175,
+              "unit": "KB/sec",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "name": "call2",
+          "status": "PASS",
+          "metrics": [
+            {
+              "name": "Samples",
+              "type": "COUNTER",
+              "sum": 4,
+              "rate": 35.714285714285715,
+              "unit": "/s",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Duration",
+              "type": "TREND",
+              "sum": 0,
+              "rate": 0,
+              "unit": "",
+              "avg": 1469,
+              "med": 885,
+              "max": 2200,
+              "min": 833,
+              "p90": 2200,
+              "p95": 2200,
+              "p99": 2200,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Errors",
+              "type": "RATE",
+              "sum": 0,
+              "rate": 0,
+              "unit": "%",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Data Sent",
+              "type": "COUNTER",
+              "sum": 0,
+              "rate": 180,
+              "unit": "KB/sec",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Data Received",
+              "type": "COUNTER",
+              "sum": 0,
+              "rate": 180,
+              "unit": "KB/sec",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            }
+          ]
+        }
+      ]
+    };
+    assert.deepEqual(actual, expected);
+  });
+
 });
