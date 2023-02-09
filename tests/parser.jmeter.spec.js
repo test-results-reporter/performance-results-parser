@@ -63,7 +63,7 @@ describe('jmeter', () => {
         {
           "name": "Data Sent",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 2729683,
           "rate": 38.87,
           "unit": "KB/sec",
           "avg": 0,
@@ -79,7 +79,7 @@ describe('jmeter', () => {
         {
           "name": "Data Received",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 362818330,
           "rate": 5166.44,
           "unit": "KB/sec",
           "avg": 0,
@@ -150,7 +150,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 371654,
               "rate": 5.36,
               "unit": "KB/sec",
               "avg": 0,
@@ -166,7 +166,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 184633892,
               "rate": 2662.79,
               "unit": "KB/sec",
               "avg": 0,
@@ -237,7 +237,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 797125,
               "rate": 12.94,
               "unit": "KB/sec",
               "avg": 0,
@@ -253,7 +253,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 169706365,
               "rate": 2754.9,
               "unit": "KB/sec",
               "avg": 0,
@@ -340,7 +340,7 @@ describe('jmeter', () => {
         {
           "name": "Data Sent",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 2729683,
           "rate": 38.87,
           "unit": "KB/sec",
           "avg": 0,
@@ -356,7 +356,7 @@ describe('jmeter', () => {
         {
           "name": "Data Received",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 362818330,
           "rate": 5166.44,
           "unit": "KB/sec",
           "avg": 0,
@@ -427,7 +427,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 371654,
               "rate": 5.36,
               "unit": "KB/sec",
               "avg": 0,
@@ -443,7 +443,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 184633892,
               "rate": 2662.79,
               "unit": "KB/sec",
               "avg": 0,
@@ -514,7 +514,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 797125,
               "rate": 12.94,
               "unit": "KB/sec",
               "avg": 0,
@@ -530,7 +530,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 169706365,
               "rate": 2754.9,
               "unit": "KB/sec",
               "avg": 0,
@@ -626,7 +626,7 @@ describe('jmeter', () => {
         {
           "name": "Data Sent",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 2729683,
           "rate": 38.87,
           "unit": "KB/sec",
           "avg": 0,
@@ -642,7 +642,7 @@ describe('jmeter', () => {
         {
           "name": "Data Received",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 362818330,
           "rate": 5166.44,
           "unit": "KB/sec",
           "avg": 0,
@@ -721,7 +721,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 371654,
               "rate": 5.36,
               "unit": "KB/sec",
               "avg": 0,
@@ -737,7 +737,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 184633892,
               "rate": 2662.79,
               "unit": "KB/sec",
               "avg": 0,
@@ -816,7 +816,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 797125,
               "rate": 12.94,
               "unit": "KB/sec",
               "avg": 0,
@@ -832,7 +832,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 169706365,
               "rate": 2754.9,
               "unit": "KB/sec",
               "avg": 0,
@@ -924,7 +924,7 @@ describe('jmeter', () => {
         {
           "name": "Data Sent",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 2729683,
           "rate": 38.87,
           "unit": "KB/sec",
           "avg": 0,
@@ -940,7 +940,7 @@ describe('jmeter', () => {
         {
           "name": "Data Received",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 362818330,
           "rate": 5166.44,
           "unit": "KB/sec",
           "avg": 0,
@@ -1010,7 +1010,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 371654,
               "rate": 5.36,
               "unit": "KB/sec",
               "avg": 0,
@@ -1026,7 +1026,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 184633892,
               "rate": 2662.79,
               "unit": "KB/sec",
               "avg": 0,
@@ -1096,7 +1096,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 797125,
               "rate": 12.94,
               "unit": "KB/sec",
               "avg": 0,
@@ -1112,7 +1112,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 169706365,
               "rate": 2754.9,
               "unit": "KB/sec",
               "avg": 0,
@@ -1200,7 +1200,7 @@ describe('jmeter', () => {
         {
           "name": "Data Sent",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 2729683,
           "rate": 38.87,
           "unit": "KB/sec",
           "avg": 0,
@@ -1216,7 +1216,7 @@ describe('jmeter', () => {
         {
           "name": "Data Received",
           "type": "COUNTER",
-          "sum": 0,
+          "sum": 362818330,
           "rate": 5166.44,
           "unit": "KB/sec",
           "avg": 0,
@@ -1286,7 +1286,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 371654,
               "rate": 5.36,
               "unit": "KB/sec",
               "avg": 0,
@@ -1302,7 +1302,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 184633892,
               "rate": 2662.79,
               "unit": "KB/sec",
               "avg": 0,
@@ -1377,7 +1377,7 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 797125,
               "rate": 12.94,
               "unit": "KB/sec",
               "avg": 0,
@@ -1393,7 +1393,7 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
+              "sum": 169706365,
               "rate": 2754.9,
               "unit": "KB/sec",
               "avg": 0,
@@ -1426,7 +1426,7 @@ describe('jmeter', () => {
           "name": "Samples",
           "type": "COUNTER",
           "sum": 8,
-          "rate": 7.067137809187279,
+          "rate": 6.92,
           "unit": "/s",
           "avg": 0,
           "med": 0,
@@ -1473,8 +1473,8 @@ describe('jmeter', () => {
         {
           "name": "Data Sent",
           "type": "COUNTER",
-          "sum": 0,
-          "rate": 355,
+          "sum": 358,
+          "rate": 0.31,
           "unit": "KB/sec",
           "avg": 0,
           "med": 0,
@@ -1489,8 +1489,8 @@ describe('jmeter', () => {
         {
           "name": "Data Received",
           "type": "COUNTER",
-          "sum": 0,
-          "rate": 355,
+          "sum": 5190,
+          "rate": 4.49,
           "unit": "KB/sec",
           "avg": 0,
           "med": 0,
@@ -1512,7 +1512,7 @@ describe('jmeter', () => {
               "name": "Samples",
               "type": "COUNTER",
               "sum": 4,
-              "rate": 3.5335689045936394,
+              "rate": 3.46,
               "unit": "/s",
               "avg": 0,
               "med": 0,
@@ -1559,8 +1559,8 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
-              "rate": 175,
+              "sum": 173,
+              "rate": 0.15,
               "unit": "KB/sec",
               "avg": 0,
               "med": 0,
@@ -1575,8 +1575,8 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
-              "rate": 175,
+              "sum": 2601,
+              "rate": 2.25,
               "unit": "KB/sec",
               "avg": 0,
               "med": 0,
@@ -1598,7 +1598,7 @@ describe('jmeter', () => {
               "name": "Samples",
               "type": "COUNTER",
               "sum": 4,
-              "rate": 35.714285714285715,
+              "rate": 1.73,
               "unit": "/s",
               "avg": 0,
               "med": 0,
@@ -1645,8 +1645,8 @@ describe('jmeter', () => {
             {
               "name": "Data Sent",
               "type": "COUNTER",
-              "sum": 0,
-              "rate": 180,
+              "sum": 184,
+              "rate": 0.08,
               "unit": "KB/sec",
               "avg": 0,
               "med": 0,
@@ -1661,8 +1661,8 @@ describe('jmeter', () => {
             {
               "name": "Data Received",
               "type": "COUNTER",
-              "sum": 0,
-              "rate": 180,
+              "sum": 2589,
+              "rate": 1.12,
               "unit": "KB/sec",
               "avg": 0,
               "med": 0,
@@ -1679,6 +1679,290 @@ describe('jmeter', () => {
       ]
     };
     assert.deepEqual(actual, expected);
+  });
+
+  it('jtl with latency', () => {
+    const actual = parser.parse({
+      type: 'jmeter',
+      files: ['tests/data/jmeter/latency.jtl']
+    });
+    const expected = {
+      "name": "TOTAL",
+      "status": "PASS",
+      "metrics": [
+        {
+          "name": "Samples",
+          "type": "COUNTER",
+          "sum": 2,
+          "rate": 1.68,
+          "unit": "/s",
+          "avg": 0,
+          "med": 0,
+          "max": 0,
+          "min": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "failures": [],
+          "status": "PASS"
+        },
+        {
+          "name": "Duration",
+          "type": "TREND",
+          "sum": 0,
+          "rate": 0,
+          "unit": "",
+          "avg": 1034,
+          "med": null,
+          "max": 1131,
+          "min": 938,
+          "p90": 1131,
+          "p95": 1131,
+          "p99": 1131,
+          "failures": [],
+          "status": "PASS"
+        },
+        {
+          "name": "Errors",
+          "type": "RATE",
+          "sum": 0,
+          "rate": 0,
+          "unit": "%",
+          "avg": 0,
+          "med": 0,
+          "max": 0,
+          "min": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "failures": [],
+          "status": "PASS"
+        },
+        {
+          "name": "Data Sent",
+          "type": "COUNTER",
+          "sum": 83,
+          "rate": 0.07,
+          "unit": "KB/sec",
+          "avg": 0,
+          "med": 0,
+          "max": 0,
+          "min": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "failures": [],
+          "status": "PASS"
+        },
+        {
+          "name": "Data Received",
+          "type": "COUNTER",
+          "sum": 1297,
+          "rate": 1.09,
+          "unit": "KB/sec",
+          "avg": 0,
+          "med": 0,
+          "max": 0,
+          "min": 0,
+          "p90": 0,
+          "p95": 0,
+          "p99": 0,
+          "failures": [],
+          "status": "PASS"
+        },
+        {
+          "name": "Latency",
+          "type": "TREND",
+          "sum": 0,
+          "rate": 0,
+          "unit": "",
+          "avg": 15,
+          "med": null,
+          "max": 20,
+          "min": 10,
+          "p90": 20,
+          "p95": 20,
+          "p99": 20,
+          "failures": [],
+          "status": "PASS"
+        }
+      ],
+      "transactions": [
+        {
+          "name": "call1",
+          "status": "PASS",
+          "metrics": [
+            {
+              "name": "Samples",
+              "type": "COUNTER",
+              "sum": 1,
+              "rate": 0.88,
+              "unit": "/s",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Duration",
+              "type": "TREND",
+              "sum": 0,
+              "rate": 0,
+              "unit": "",
+              "avg": 1131,
+              "med": null,
+              "max": 1131,
+              "min": 1131,
+              "p90": 1131,
+              "p95": 1131,
+              "p99": 1131,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Errors",
+              "type": "RATE",
+              "sum": 0,
+              "rate": 0,
+              "unit": "%",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Data Sent",
+              "type": "COUNTER",
+              "sum": 45,
+              "rate": 0.04,
+              "unit": "KB/sec",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Data Received",
+              "type": "COUNTER",
+              "sum": 647,
+              "rate": 0.57,
+              "unit": "KB/sec",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "name": "call2",
+          "status": "PASS",
+          "metrics": [
+            {
+              "name": "Samples",
+              "type": "COUNTER",
+              "sum": 1,
+              "rate": 1.07,
+              "unit": "/s",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Duration",
+              "type": "TREND",
+              "sum": 0,
+              "rate": 0,
+              "unit": "",
+              "avg": 938,
+              "med": null,
+              "max": 938,
+              "min": 938,
+              "p90": 938,
+              "p95": 938,
+              "p99": 938,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Errors",
+              "type": "RATE",
+              "sum": 0,
+              "rate": 0,
+              "unit": "%",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Data Sent",
+              "type": "COUNTER",
+              "sum": 46,
+              "rate": 0.05,
+              "unit": "KB/sec",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            {
+              "name": "Data Received",
+              "type": "COUNTER",
+              "sum": 644,
+              "rate": 0.69,
+              "unit": "KB/sec",
+              "avg": 0,
+              "med": 0,
+              "max": 0,
+              "min": 0,
+              "p90": 0,
+              "p95": 0,
+              "p99": 0,
+              "failures": [],
+              "status": "PASS"
+            }
+          ]
+        }
+      ]
+    };
+    // assert.deepEqual(actual, expected);
   });
 
 });

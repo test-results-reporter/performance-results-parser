@@ -43,6 +43,9 @@ function getTransaction(transaction, record, thresholds) {
   transaction.metrics.push(getErrorMetric(transaction, record, thresholds));
   transaction.metrics.push(getDataSentMetric(transaction, record, thresholds));
   transaction.metrics.push(getDataReceivedMetric(transaction, record, thresholds));
+  if (record['Average Latency']) {
+    transaction.metrics.push(getRequestLatencyMetric(transaction, record, thresholds));
+  }
   transaction.status = transaction.metrics.some(_metric => _metric.status === 'FAIL') ? 'FAIL' : 'PASS';
   return transaction;
 }
@@ -88,6 +91,26 @@ function getRequestDurationMetric(transaction, record, thresholds) {
  * @param {Threshold[]} thresholds 
  * @returns 
  */
+function getRequestLatencyMetric(transaction, record, thresholds) {
+  const metric = new Metric();
+  metric.name = 'Latency';
+  metric.type = 'TREND';
+  metric.avg = parseInt(record['Average Latency']);
+  metric.med = parseInt(record['Median Latency']);
+  metric.p90 = parseInt(record['90% Latency']);
+  metric.p95 = parseInt(record['95% Latency']);
+  metric.p99 = parseInt(record['99% Latency']);
+  metric.min = parseInt(record['Min Latency']);
+  metric.max = parseInt(record['Max Latency']);
+  setMetricStatus(transaction, metric, thresholds);
+  return metric;
+}
+
+/**
+ * @param {object} record 
+ * @param {Threshold[]} thresholds 
+ * @returns 
+ */
 function getErrorMetric(transaction, record, thresholds) {
   const metric = new Metric();
   metric.name = 'Errors';
@@ -109,6 +132,9 @@ function getDataSentMetric(transaction, record, thresholds) {
   metric.type = 'COUNTER';
   metric.rate = parseFloat(record['Sent KB/sec']);
   metric.unit = 'KB/sec';
+  const samples = parseInt(record['# Samples']);
+  const throughput = parseFloat(record['Throughput']);
+  metric.sum = parseInt(metric.rate * ( samples * 1000 / throughput));
   setMetricStatus(transaction, metric, thresholds);
   return metric;
 }
@@ -124,6 +150,9 @@ function getDataReceivedMetric(transaction, record, thresholds) {
   metric.type = 'COUNTER';
   metric.rate = parseFloat(record['Received KB/sec']);
   metric.unit = 'KB/sec';
+  const samples = parseInt(record['# Samples']);
+  const throughput = parseFloat(record['Throughput']);
+  metric.sum = parseInt(metric.rate * ( samples * 1000 / throughput));
   setMetricStatus(transaction, metric, thresholds);
   return metric;
 }
