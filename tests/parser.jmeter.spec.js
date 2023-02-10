@@ -1445,7 +1445,7 @@ describe('jmeter', () => {
           "rate": 0,
           "unit": "",
           "avg": 1153,
-          "med": 980,
+          "med": 1077,
           "max": 2200,
           "min": 24,
           "p90": 2200,
@@ -1531,7 +1531,7 @@ describe('jmeter', () => {
               "rate": 0,
               "unit": "",
               "avg": 837,
-              "med": 523,
+              "med": 1077,
               "max": 1170,
               "min": 24,
               "p90": 1170,
@@ -1617,7 +1617,7 @@ describe('jmeter', () => {
               "rate": 0,
               "unit": "",
               "avg": 1469,
-              "med": 885,
+              "med": 1422,
               "max": 2200,
               "min": 833,
               "p90": 2200,
@@ -1713,7 +1713,7 @@ describe('jmeter', () => {
           "rate": 0,
           "unit": "",
           "avg": 1034,
-          "med": null,
+          "med": 1034,
           "max": 1131,
           "min": 938,
           "p90": 1131,
@@ -1777,7 +1777,7 @@ describe('jmeter', () => {
           "rate": 0,
           "unit": "",
           "avg": 15,
-          "med": null,
+          "med": 15,
           "max": 20,
           "min": 10,
           "p90": 20,
@@ -1815,7 +1815,7 @@ describe('jmeter', () => {
               "rate": 0,
               "unit": "",
               "avg": 1131,
-              "med": null,
+              "med": 1131,
               "max": 1131,
               "min": 1131,
               "p90": 1131,
@@ -1901,7 +1901,7 @@ describe('jmeter', () => {
               "rate": 0,
               "unit": "",
               "avg": 938,
-              "med": null,
+              "med": 938,
               "max": 938,
               "min": 938,
               "p90": 938,
@@ -1962,7 +1962,7 @@ describe('jmeter', () => {
         }
       ]
     };
-    // assert.deepEqual(actual, expected);
+    assert.deepEqual(actual, expected);
   });
 
 });
