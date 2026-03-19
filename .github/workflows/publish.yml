@@ -1,19 +1,38 @@
-name: Publish
+name: Release Please
+
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write  # Required for OIDC
+
 jobs:
-  build:
+  release-please:
     runs-on: ubuntu-latest
+    outputs:
+      release-created: ${{ steps.release.outputs.release_created }}
+      tag-name: ${{ steps.release.outputs.tag_name }}
     steps:
-      - uses: actions/checkout@v2
-      # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v2
+      - uses: googleapis/release-please-action@v4
+        id: release
         with:
-          node-version: '14.x'
+          config-file: .github/release-please-config.json
+          manifest-file: .github/release-please-manifest.json
+
+  publish:
+    needs: release-please
+    runs-on: ubuntu-latest
+    if: ${{ needs.release-please.outputs.release-created }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm install
       - run: npm test
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm publish --provenance
