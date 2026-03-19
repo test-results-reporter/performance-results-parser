@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const csv_json = require('csvjson');
+const csv_json = require('../helpers/csvjson');
 const { aggregate } = require('parse-jtl');
 const PerformanceTestResult = require('../models/PerformanceTestResult');
 const Transaction = require('../models/Transaction');

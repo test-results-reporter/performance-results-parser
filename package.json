@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/test-results-reporter/performance-results-parser#readme",
   "dependencies": {
-    "csvjson": "^5.1.0",
     "globrex": "^0.1.2",
     "parse-jtl": "^1.0.4",
     "totalist": "^3.0.0"
