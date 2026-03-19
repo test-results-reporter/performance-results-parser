@@ -23,3 +23,6 @@ This project is a Node.js utility for parsing performance test results from tool
 
 - **Tests**: All new features or bug fixes must include corresponding tests.
 - **Verification**: Run `npm test` to ensure all tests pass before submitting.
+
+---
+*Note: This repository follows Conventional Commits for all contributions.*
