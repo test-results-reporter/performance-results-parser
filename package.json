@@ -29,7 +29,7 @@
   "homepage": "https://github.com/test-results-reporter/performance-results-parser#readme",
   "dependencies": {
     "globrex": "^0.1.2",
-    "parse-jtl": "^1.0.4",
+    "parse-jtl": "^1.1.0",
     "totalist": "^3.0.0"
   },
   "devDependencies": {
