@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.10](https://github.com/test-results-reporter/performance-results-parser/compare/v0.0.9...v0.0.10) (2026-03-21)
+
+
+### Features
+
+* update docs and bump parse-jtl dependency ([#18](https://github.com/test-results-reporter/performance-results-parser/issues/18)) ([ff80f83](https://github.com/test-results-reporter/performance-results-parser/commit/ff80f83aec4d9c325b5ceb4073fcb662fe6c60f3))
+
 ## [0.0.9](https://github.com/test-results-reporter/performance-results-parser/compare/v0.0.8...v0.0.9) (2026-03-20)
 
 
