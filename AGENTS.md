@@ -1,28 +1,29 @@
 # AGENTS.md
 
-This project is a Node.js utility for parsing performance test results from tools like JMeter and more.
+## Project Overview
 
-## Development Setup
+- **What**: A Node.js utility for parsing performance test results from tools like JMeter.
+- **Why**: It simplifies the process of aggregating performance metrics and applying success thresholds across multiple result files.
+
+## Development & HOW-TO
 
 - **Install dependencies**: `npm install`
 - **Run tests**: `npm test`
-- **Node.js Versions**: Supported on recent LTS versions (e.g., Node.js 18.x, 20.x, 22.x, 24.x).
+- **Verification**: Always run `npm test` before submitting changes.
 
 ## Project Structure
 
-- `src/`: Contains the logic for parsing different performance result formats.
-- `tests/`: Contains test suites for the parser.
+- `src/`: Core logic for parsing performance result formats.
+  - `parsers/`: Parsers for specific formats (currently JMeter).
+  - `helpers/`: Utility functions, including a custom CSV-to-JSON parser.
+- `tests/`: Test suites using Mocha and C8 for coverage.
 
-## CI/CD and Releases
+## CI/CD and Conventions
 
-- **PR Titles**: This project uses Conventional Commits. Ensure your PR title follows the format: `type(scope): description` (e.g., `feat(parser): add support for new format`).
-- **Automated Releases**: We use `release-please` to automate versioning and changelog generation.
-- **Publishing**: Packages are automatically published to npm via GitHub Actions upon release using GitHub OIDC and provenance.
-
-## PR Guidelines
-
-- **Tests**: All new features or bug fixes must include corresponding tests.
-- **Verification**: Run `npm test` to ensure all tests pass before submitting.
+- **PR Titles**: Follow Conventional Commits: `type(scope): description`.
+- **Node.js**: The CI/CD workflows use Node.js 25.x.
+- **Releases**: Automated via `release-please`. Packages are published to npm using GitHub OIDC.
+- **Security**: For all data parsing logic, explicitly filter or ignore `__proto__`, `constructor`, and `prototype` keys to prevent prototype pollution.
 
 ---
-*Note: This repository follows Conventional Commits for all contributions.*
+*Note: This repository requires all contributions to follow Conventional Commits.*
